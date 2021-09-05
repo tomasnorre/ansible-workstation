@@ -1,0 +1,8 @@
+---
+
+- name: Install development software
+  community.general.snap:
+    name: 
+      - phpstorm
+      - code
+    classic: yes

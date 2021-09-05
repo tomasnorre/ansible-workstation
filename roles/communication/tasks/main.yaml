@@ -1,0 +1,7 @@
+---
+
+- name: Install communication software
+  community.general.snap:
+    name: 
+      - skype
+      - discord

@@ -1,0 +1,6 @@
+---
+- name: Install DevOps Tools
+  community.general.snap:
+    name: 
+      - kubectl
+    classic: yes
