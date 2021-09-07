@@ -1,0 +1,9 @@
+---
+- name: install desktop environment related packages
+  become: true
+  become_user: root
+  apt:
+    state: present
+    name:         
+      - plank
+      - ulauncher
