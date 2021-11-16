@@ -1,4 +1,10 @@
 ---
+
+- name: Add neofetch ppa
+  ansible.builtin.apt_repository:
+    repo: 'ppa:dawidd0811/neofetch'
+    codename: focal
+
 - name: install packages
   become: true
   become_user: root
@@ -10,6 +16,8 @@
       - curl
       - wget
       - vim
+      - neofetch
+      - chromium-browser
 
 - name: Install software from snap
   community.general.snap:

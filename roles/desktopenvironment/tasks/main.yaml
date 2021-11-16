@@ -1,4 +1,9 @@
 ---
+- name: Add ulauncher ppa
+  ansible.builtin.apt_repository:
+    repo: 'ppa:agornostal/ulauncher'
+    codename: focal
+
 - name: install desktop environment related packages
   become: true
   become_user: root
