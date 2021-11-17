@@ -19,6 +19,7 @@
       - vim
       - neofetch
       - chromium-browser
+      - gnome-font-viewer
 
 - name: Install software from snap
   community.general.snap:
